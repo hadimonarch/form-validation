@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Velidation Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="main-heading">FORM <span style="color:#FAB406"> VELIDATION IN JS</span></h1>
+     <div class="container">
+
+
+<!-- popup -->
+<div class="popup-container" id="popup">
+    <img src="tick.png">
+    <h1>Thank You!</h1>
+    <p style="font-weight:500";>Your details has been submitted to <br> Umar Altaf.</p>
+    <button type="button" onclick="closePopup()">OKAY</button>
+</div><!--popup-container end-->
+
+<!-- popup end -->
+
+
+
+
+        <form name="form" onsubmit="formVelidation()" ; return false autocomplete="off" method="get">
+            <input type="text" name="fname" id="fname" placeholder="First Name"> <br> <br>
+            <input type="text" name="lname" id="lname" placeholder="Last Name"><br><br>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password"><br><br>
+            <input type="password" name="cpass" id="cpass" placeholder="Confirm password"><br><br>
+            <input type="number" name="number" id="phone" placeholder="Enter your phone number"><br><br>
+            <input type="submit" name="fsubmit" id="fsubmit" value="&rarr;Check Validation">
+            <input type="button" name="fadd" id="fadd" value="Add Data to Table" class="fsubmitbutton" onclick="tableData()"> <br>
+            <button type="button"  onclick="openPopup()" id="popupButton">&rarr;Submit Form</button>
+        </form>
+
+
+        <div class="table">
+            <table id="customTab" contenteditable="true">
+             <tbody>
+                <!-- <h1>hello</h1> -->
+                <!-- <tr>
+                    <td>First Name</td>
+                    <td id="firstNameTable"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td id="lastNameTable"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td id="passwordTable"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td id="phoneTable"></td>
+                </tr> -->
+            </tbody>   
+            </table>
+        </div><!--tble end-->
+    </div><!--container end -->
+    <script src="script.js"></script>
+</body>
+</html>
